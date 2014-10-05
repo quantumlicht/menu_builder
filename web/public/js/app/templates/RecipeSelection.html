@@ -1,0 +1,70 @@
+<div class="loading_animation" style="display:none" >&nbsp;</div>
+<form role="form">
+	<div class="form-group" id="courseSelection">
+		
+	</div>
+
+	<div class="form-group">
+		<label for="max_time">Maximum of time to cook each meals (in minutes)</label>
+		<input type="number" min="5" step="5" value="30" class="form-control" id="max_time" placeholder="Max time in mins">
+	</div>
+
+	<div class="form-group">
+		<label for="ingredient pos">Ingredients I like. Leave blank if none</label>
+		<select class="typeahead form-control" id="ingredient-pos" meta-type="ingredient pos" type="text" placeholder="Ingredients I like"></select>
+	</div>
+	
+	<div class="form-group">
+		<label for="ingredient neg">Ingredients I don't like. Leave blank if none</label>
+		<select class="typeahead form-control" id="ingredient-neg" meta-type="ingredient neg" type="text" placeholder="Ingredients I don't like"></select>
+	</div>
+	<!-- <div class="form-group">
+		<label for="allergy">Allergies I have. Leave blank if none</label>
+		<select class="form-control typeahead" meta-type="allergy" type="text" placeholder="Allergies I have">
+	</div>
+
+	<div class="form-group">
+		<label for="cuisine pos">Cuisines I like. Leave blank if none</label>
+		<select class="form-control typeahead" meta-type="cuisine pos" type="text" placeholder="Cuisines I like">
+	</div>
+
+	<div class="form-group">
+		<label for="cuisine neg">Cuisines I don't like. Leave blank if none</label>
+		<select class="form-control typeahead" meta-type="cuisine neg" type="text" placeholder="Cuisines I don't like">
+	</div>
+
+	<div class="form-group">
+		<label for="holiday">Holiday I want to celebrate. Leave blank if none</label>
+		<select class="form-control typeahead" meta-type="holiday" type="text" placeholder="I want to celebrate this holiday">
+	</div>
+
+
+	<div class="form-group">
+		<label for="diet">Diet I must respect. Leave blank if none</label>
+		<select class="form-control typeahead" meta-type="diet" type="text" placeholder="Diet I must respect">
+		-->
+  	<button type="submit" id="select_menu" data-loading-text="Loading..." class="btn btn-default">Get my Menu</button>
+		
+</form>
+<div class="row">
+	<div class="progressMessage">
+		
+	</div>
+</div>
+<div class="row">
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+    <span class="sr-only">0% Complete</span>
+  </div>
+</div>
+</div>
+
+
+<div class="panel-group recipeListsContainer" id="accordion">
+	
+</div>
+
+<script type="text/javascript">
+	// Hack to make sure the DOM is properly initialized before trying to set the typeahead
+	$('select').trigger('th-ready');
+</script>

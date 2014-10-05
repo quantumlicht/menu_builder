@@ -1,0 +1,16 @@
+
+<div class="bs-callout bs-callout-{{status_class}}">
+  <div class="row">
+    <div class="col-md-6">
+      <a href="{{recipeUrl}}">{{recipeName}}</a>
+      <img src="{{imageUrl}}"> 
+    </div>
+    <div class="col-md-6">
+      <ul>
+        {{#each ingredients}}
+         <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

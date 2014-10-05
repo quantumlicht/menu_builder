@@ -1,0 +1,8 @@
+<label for "courseSelection">Remove the courses you dont like</label>
+<div class="btn-group" data-toggle="buttons" id="courseSelection">
+	{{#each courses}}
+	<label class="btn btn-primary active">
+    	<input type="checkbox" class="course-select" value="{{this.description}}" checked>{{this.description}}
+  	</label>
+	{{/each}}
+</div>

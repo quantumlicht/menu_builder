@@ -1,0 +1,8 @@
+{
+    "passport": {
+    	"domain": "app25772746.auth0.com",
+    	"clientID": "kJk7T528ulbkoiEHXt8GbM15DgegseXq",
+    	"callbackURL": "http://localhost:2000/",
+    	"redirectUri": "http://localhost:2000/callback"
+	}
+}
